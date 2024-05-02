@@ -16,8 +16,8 @@
             </div>
             <div>
                 <ul class = "nav">
-                    <li><a href= "#event-page">Event Page</a></li>
-                    <li><a href = "#about-us">About us</a></li>
+                    <li><a href= "#about-us">About us</a></li>
+                    <li><a href = "#event-page">Event Page</a></li>
                     <li><a href = "#contact-us">Contact us</a></li>
                 </ul>
             </div>
@@ -31,8 +31,8 @@
                     <span></span>
                 </div>
                 <div class = "links">
-                    <li><a href= "#event-page" onclick="toggleMenu()">Event Page</a></li>
-                    <li><a href = "#about-us" onclick="toggleMenu()">About us</a></li>
+                    <li><a href= "#about-us" onclick="toggleMenu()">About us</a></li>
+                    <li><a href = "#event-page" onclick="toggleMenu()">Event Page</a></li>
                     <li><a href = "#contact-us" onclick="toggleMenu()">Contact us</a></li>
                 </div>
             </div>
@@ -48,12 +48,39 @@
             </div>
         </div>
     </section>
-    <section id = "event-page">
-        <div class = "container-event">
-            <div class = "setlist">
-                <h1>SETLISTS</h1>
+    <section id = "about-us">
+        <h1 class = "header"><span>ABOUT</span> US</h1>
+        <div class = "row">
+            <div class = "img">
+                <img src = "assets/Rules! (2).png">
+            </div>
+            <div class = "content">
+                <h3>Join us as we embark on an adventure to find the next big thing in Tech</h3>
+                <p>Comprised of influential tech icons Seeun, Jeongyeon, and Hanni, Indonesia's biggest online tech event
+                    was put together by PT ChipiChapa in October 2015. After a successful early years, we climbed our way
+                    to the top presenting the most mind boggling tech to solve real world problem and further extend humanity's
+                    grip on power over the universe.
+                </p>
+                <button><span>Learn more </span></button>
             </div>
         </div>
     </section>
+    <section id = "event-page">
+        <div class = "setlist">
+            <h1>EVENT SETLIST</h1>
+        </div>
+        <div class = "container-event">
+            <div class = "left-side">
+                <ul>
+                    <li><a class = "active">Introductory speech</a></li>
+                    <li><a>First Presentation Section</a></li>
+                    <li><a>Lunch Break</a></li>
+                    <li><a>Second Presentation Section</a></li>
+                    <li><a>Closing speech</a></li>
+                </ul> 
+            </div>            
+        </div>
+    </section>
+    <script src = "landingpage.js"></script>
 </body>
 </html>
