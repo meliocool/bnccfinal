@@ -21,6 +21,7 @@ body {
     font-family: 'Kanit', sans-serif;
     height: 100%;
     overflow-x: hidden;
+    background-color: #EEEEEE;
 }
 
 a, .btn{    
@@ -161,6 +162,11 @@ learned from: https://www.youtube.com/watch?v=ldwlOzRvYOU&t=1231s */
     overflow: hidden;
     transition: all 0.3 ease-in-out;
     z-index: 1;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 120px;
+    height: 150px;
 }
 
 .links a {
@@ -168,7 +174,7 @@ learned from: https://www.youtube.com/watch?v=ldwlOzRvYOU&t=1231s */
     padding: 10px;
     text-align: center;
     font-size: 1rem;
-    color: rgba(74,74,236,1);
+    color: #00ADB5;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
     font-size: 20px;
@@ -418,7 +424,6 @@ ul {
     padding-right: 5rem;
     text-align: justify;
 }
-
 
 .left-side ul {
     padding-left: 50px;
@@ -820,4 +825,228 @@ https://stackoverflow.com/questions/40996204/bootstrap-link-changing-my-css-code
     opacity: 1;
     right: 0;
 }
+
+#registration-form {
+    background-color: #EEEEEE;
+    height: 100vh;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-left-title h1 {
+    font-size: 50px;
+    line-height: 160px;
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.contact-left-title hr {
+    width: 50%;
+    position: relative;
+    bottom: 2rem;
+    height: 5px;
+    background-color: #00ADB5;
+}
+
+.contact-inputs {
+    width: 400px;   
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.contact-left .dropdown{
+    min-width: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contact-left .dropdown .select {
+    background: #00ADB5;
+    color: #fff;
+    display: flex;
+    padding: 0.8em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 120%;
+    font-size: 16px;
+}
+
+.select-clicked {
+    border: 2px #00ADB5 solid;
+    box-shadow: 0 0 0.8em #00ADB5;
+}
+
+.select:hover{
+    background: white;
+}
+
+.caret {
+    width: 10px;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: white;
+    color:#00ADB5;
+    border: 1px solid #00ADB5;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    position: absolute;
+    top: 3.9em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu li:hover {
+    background: #00ADB5;
+    color: white;
+}
+
+.active {
+    background: #EEEEEE;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+.contact-left button {
+    border-radius: 4px;
+    background-color: #00ADB5;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    width: 125px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    font-family: "Kanit", sans-serif;
+}
+
+.contact-left button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
   
+.contact-left button span:after {
+    content: '\00bb';
+    font-size: 1rem;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.contact-left button:hover span {
+    padding-right: 25px;
+}
+  
+.contact-left button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#contact-us {
+    height: 100vh;
+}
+
+.get-in-touch {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Kanit", sans-serif;
+}
+
+.get-in-touch span {
+    color: #00ADB5;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.info-container i {
+    font-size: 40px;
+    background-color: #00ADB5;
+    border-radius: 20rem;
+    padding: 20px;
+    margin: 1rem;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.info-container i:hover {
+    transform: translateY(-10px);
+}
+
+.address, .telephone, .email {
+    text-align: center;
+    padding: 30px;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+footer {
+    height: 26vh;
+    margin-top: 5rem;
+    background: #EEEEEE;
+}
+
+footer p {
+    text-align: center;
+    color: #00ADB5;
+}
