@@ -10,11 +10,8 @@ const explanations = document.querySelectorAll(".right-side ul li .explanation")
 
 getItems.forEach((item, index) => {
     item.addEventListener("click", function(e){
-        // Remove active class from all bullet points and explanations
         getItems.forEach(item => item.classList.remove("active"));
         explanations.forEach(explanation => explanation.classList.remove("active"));
-        
-        // Add active class to the clicked bullet point and corresponding explanation
         this.classList.add("active");
         explanations[index].classList.add("active");
     });
